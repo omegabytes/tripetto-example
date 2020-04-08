@@ -1,0 +1,63 @@
+{
+  "name": "tripetto-example-react-bootstrap",
+  "title": "Tripetto example (React + Bootstrap)",
+  "version": "1.0.0",
+  "description": "Demo for implementing Tripetto using React and Bootstrap.",
+  "license": "MIT",
+  "private": true,
+  "homepage": "https://gitlab.com/tripetto/examples/react",
+  "author": {
+    "name": "Mark van den Brink",
+    "email": "mark@vandenbr.ink",
+    "url": "http://mark.vandenbr.ink"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/tripetto/examples/react.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/tripetto/examples/react/issues"
+  },
+  "scripts": {
+    "start": "tripetto ./public/demo.json --tutorial",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\" \"public/**/*.html\" \"src/**/*.scss\" \"*.json\" \"!package-lock.json\" \"*.yml\" \"webpack.config.js\"",
+    "lint": "tslint -c ./tslint.json ./src/**/*.ts",
+    "test": "webpack-dev-server --mode development",
+    "make": "npm run format && npm run lint && webpack --mode production"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.2",
+    "@marblecore/tslint-configuration": "^5.12.1",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "@types/superagent": "^4.1.3",
+    "autoprefixer": "^9.6.1",
+    "bootstrap": "^4.3.1",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "jquery": "^3.4.1",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "popper.js": "^1.15.0",
+    "postcss-loader": "^3.0.0",
+    "precss": "^4.0.0",
+    "prettier": "^1.18.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "superagent": "^5.1.0",
+    "tripetto": "^1.7.1",
+    "tripetto-collector": "^1.7.0",
+    "tripetto-collector-standard-bootstrap": "^1.0.23",
+    "ts-loader": "^6.0.4",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.2",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
+  }
+}
